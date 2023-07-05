@@ -5,6 +5,7 @@ PD-Camera is an unofficial, experimental accessory for [Panic Inc.](https://pani
 > **This repository contains the Lua+C app that runs on the Playdate itself. The hardware and firmware of the PD-Camera accessory it works with can be found [here](https://github.com/t0mg/pd-camera).**
 
 Here's a one minute intro video (click to watch).
+
 [![Watch the project's trailer video on YouTube](https://img.youtube.com/vi/sbAL9xYFmcQ/0.jpg)](https://www.youtube.com/watch?v=sbAL9xYFmcQ)
 
 ## Disclaimer
