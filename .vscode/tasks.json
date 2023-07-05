@@ -1,0 +1,132 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Cleanup pdx",
+      "type": "shell",
+      "options": {
+        "cwd": "${workspaceRoot}"
+      },
+      "windows": {
+        "command": "Remove-Item",
+        "args": [
+          "*.pdx",
+          "-Force",
+          "-Recurse"
+        ]
+      }
+    },
+    {
+      "label": "Cleanup all",
+      "dependsOn": [
+        "Cleanup pdx"
+      ],
+      "type": "shell",
+      "options": {
+        "cwd": "${workspaceRoot}"
+      },
+      "windows": {
+        "command": "Remove-Item",
+        "args": [
+          "build/*",
+          "-Force",
+          "-Recurse"
+        ]
+      }
+    },
+    {
+      "label": "CMake Simulator",
+      "dependsOn": [
+        "Cleanup all"
+      ],
+      "type": "shell",
+      "options": {
+        "cwd": "${workspaceRoot}/build"
+      },
+      "command": "CMake",
+      "args": [
+        "-S ..",
+        "-G \"NMake Makefiles\""
+      ],
+      "problemMatcher": [
+        "$msCompile"
+      ]
+    },
+    {
+      "label": "CMake Debug",
+      "dependsOn": [
+        "Cleanup all"
+      ],
+      "type": "shell",
+      "options": {
+        "cwd": "${workspaceRoot}/build"
+      },
+      "command": "CMake",
+      "args": [
+        "-S ..",
+        "-G \"NMake Makefiles\"",
+        "--toolchain=${env:PLAYDATE_SDK_PATH}\\C_API\\buildsupport\\arm.cmake",
+        "-DCMAKE_BUILD_TYPE=Debug"
+      ]
+    },
+    {
+      "label": "CMake Release",
+      "dependsOn": [
+        "Cleanup all"
+      ],
+      "type": "shell",
+      "options": {
+        "cwd": "${workspaceRoot}/build"
+      },
+      "command": "CMake",
+      "args": [
+        "-S ..",
+        "-G \"NMake Makefiles\"",
+        "--toolchain=${env:PLAYDATE_SDK_PATH}\\C_API\\buildsupport\\arm.cmake",
+        "-DCMAKE_BUILD_TYPE=Release"
+      ]
+    },
+    {
+      "label": "Make",
+      "type": "shell",
+      "options": {
+        "cwd": "${workspaceRoot}/build"
+      },
+      "command": "nmake",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "Run Simulator",
+      "dependsOn": [
+        "Lua build"
+      ],
+      "type": "shell",
+      "options": {
+        "cwd": "${workspaceRoot}"
+      },
+      "command": "PlaydateSimulator.exe",
+      "args": [
+        "Camera.pdx"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "Lua build",
+      "type": "shell",
+      "options": {
+        "cwd": "${workspaceRoot}"
+      },
+      "command": "pdc",
+      "args": [
+        "Source",
+        "Camera.pdx"
+      ],
+      "problemMatcher": []
+    }
+  ]
+}

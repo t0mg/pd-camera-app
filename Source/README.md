@@ -1,0 +1,1 @@
+Note: to build on Windows + VS Code, open VS Code by running `code` from an `x64 Native Tools Command prompt` to get the correct paths set for nmake.

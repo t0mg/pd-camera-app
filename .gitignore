@@ -1,0 +1,8 @@
+build/*
+Source/main.lua
+Source/pdex.elf
+Source/pdex.dll
+Camera.pdx/*
+.sentry-native/*
+.vscode/settings.json
+*.code-workspace

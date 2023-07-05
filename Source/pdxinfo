@@ -1,0 +1,9 @@
+name=Camera
+author=Tom Granger
+description=Experimental camera app and hardware addon.
+bundleID=com.t0m.camera
+version=1.0
+buildNumber=1
+imagePath=images/card.png
+launchSoundPath=
+contentWarning=Taking photos is impossible on Playdate. Or is it ?
