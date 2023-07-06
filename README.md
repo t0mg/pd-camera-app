@@ -1,4 +1,4 @@
-# PD Camera App
+# PD-Camera project App
 
 PD-Camera is an unofficial, experimental accessory for [Panic Inc.](https://panic.com/)'s [Playdate](https://play.date) handheld console, which as the name hopefully suggests allows the device to record pictures as well as animated gifs, in whopping  1-bit color and QVGA (320x240) resolution. Kind of similar to the [1998 accessory for that other monochrome handheld device](https://en.wikipedia.org/wiki/Game_Boy_Camera) (which has 2-bit color and fewer pixels).
 
@@ -76,11 +76,11 @@ At any time:
 
 To record a video, use left or right to reach the `VIDEO MODE` section, then up or down to select `On`. A new bar will appear at the top to confirm that. You can now play with the other menu sections or crank and keep cranking to record a movie (like an old mechanical camera!). 
 
+> Note: if you'd rather not have to use the crank to record videos, an alternative input method is available: press and hold Ⓐ. You can enable this via a checkbox in the Playdate system menu.
+
 ![Recording an animation](images/rec.gif)
 
-When the memory limit is full or if stop cranking, the app will start processing the data and save a `.gif` file in your data folder (see [retreiving media](#retrieving-media)). 
-
-> Note: if you'd rather not have to use the crank to record videos, an alternative input method is available: press and hold Ⓐ. You can enable this via a checkbox in the Playdate system menu.
+When the maximum duration is reached or if you stop cranking, the app will start processing the data and save a `.gif` file in your data folder (see [retreiving media](#retrieving-media)). 
 
 ![Processing the gif](images/convert.gif)
 
