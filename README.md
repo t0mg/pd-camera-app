@@ -96,6 +96,8 @@ The menu in this screen displays small thumbnails of your media.
 
 Videos are represented with 2 columns of holes, as in an actual film strip (and the preview is a still of the first frame of the video).
 
+![Alt text](images/roll-video.gif)
+
 At any time:
 - pressing Ⓑ will return to the **home**.
 
