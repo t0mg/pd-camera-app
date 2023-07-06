@@ -76,11 +76,11 @@ At any time:
 
 To record a video, use left or right to reach the `VIDEO MODE` section, then up or down to select `On`. A new bar will appear at the top to confirm that. You can now play with the other menu sections or crank and keep cranking to record a movie (like an old mechanical camera!). 
 
+> Note: if you'd rather not have to use the crank to record videos, an alternative input method is available: press and hold Ⓐ. You can enable this via a checkbox in the Playdate system menu.
+
 ![Recording an animation](images/rec.gif)
 
-When the memory limit is full or if stop cranking, the app will start processing the data and save a `.gif` file in your data folder (see [retreiving media](#retrieving-media)). 
-
-> Note: if you'd rather not have to use the crank to record videos, an alternative input method is available: press and hold Ⓐ. You can enable this via a checkbox in the Playdate system menu.
+When the maximum duration is reached or if you stop cranking, the app will start processing the data and save a `.gif` file in your data folder (see [retreiving media](#retrieving-media)). 
 
 ![Processing the gif](images/convert.gif)
 
