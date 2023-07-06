@@ -80,6 +80,8 @@ To record a video, use left or right to reach the `VIDEO MODE` section, then up 
 
 The `VIDEO PALETTE` section (only available when `VIDEO MODE` is `On`) allows you to choose from different palette presets for the generated gif. It's still 2 color, but if you feel like trying something else than black & white, you can. This feature is only available in video mode and you obviously won't be able to admire the result on your Playdate directly.
 
+![Screenshot of the video palette menu](images/palettes.gif)
+
 ### Camera roll
 
 The menu in this screen displays small thumbnails of your media. 
@@ -104,6 +106,7 @@ Then navigate to `Data/com.t0m.camera/` if you installed the app manually, or `D
 ## TODO
 
 - Add sound effects
+- Add a bunch of screenshots to this doc
 - Add an animated preview for movies in the camera roll (i.e. generate a `.pdv` in addition to the `.gif`)
 - Add stickers and cool stuff
 - Fix all the [issues](#known-issues) UwU
