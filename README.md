@@ -95,7 +95,7 @@ In the `DELETE` section, pressing Ⓐ will delete the currently displayed photo 
 
 To export your media, plug your Playdate to a computer and reboot to Data Disk (see [here](https://help.play.date/games/sideloading/#data-disk-mode) if you don't know how).
 
-Then navigate to `Data/t0m.com.camera/` if you installed the app manually, or `Data/user.XXXXX.t0m.com.camera/` if you sideloaded a build. 
+Then navigate to `Data/com.t0m.camera/` if you installed the app manually, or `Data/user.XXXXX.com.t0m.camera/` if you sideloaded a build. 
 - the `DCIM` folder contains your still images, in `.gif` format.
 - the `MOVIES` folder contains your videos also as `.gif` (but animated).
 
