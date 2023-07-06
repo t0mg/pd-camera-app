@@ -146,6 +146,7 @@ Fonts
 
 Other
 - [`progressbar.lua`](Source/progressbar.lua) was inspired from [this post](https://devforum.play.date/t/more-clarity-on-drawtext-and-sprites/6928/21) by TheMediocritist
+- The camera roll (image viewer) was inspired from [this post](https://devforum.play.date/t/heres-a-camera-roll-style-image-gallery-viewer-for-playdate-developers/6444) by AdamsImmersive
 
 ----
 
