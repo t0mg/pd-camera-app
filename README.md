@@ -28,7 +28,7 @@ Or read on for installation instructions.
 
 ## Installation
 
-If you don't want to modify the source, you can directly grab a prebuilt `pdz` file from the repository's releases and [sideload it](https://help.play.date/games/sideloading/) on your Playdate. Otherwise, read on to build your own.
+If you don't want to modify the source, you can directly grab a prebuilt `pdx.zip` file from the repository's [releases](https://github.com/t0mg/pd-camera-app/releases) and [sideload it](https://help.play.date/games/sideloading/) on your Playdate. Otherwise, read on to build your own.
 
 > Note: the app can run in the Simulator but that won't get you very far, as it is not compatible with the [hardware of this project](https://github.com/t0mg/pd-camera).
 
