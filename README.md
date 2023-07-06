@@ -49,6 +49,8 @@ Connect the PD Camera hardware addon to your Playdate and turn it on. Then wake 
 
 ### Home screen
 
+![Home screen](images/home.gif)
+
 In the home screen,
 - If the camera device is detected, pressing Ⓐ will enter **viewfinder** mode.
   
@@ -72,9 +74,15 @@ At any time:
 - pressing Ⓐ takes a picture with the current settings.
 - pressing Ⓑ will return to the **home**.
 
-To record a video, use left or right to reach the `VIDEO MODE` section, then up or down to select `On`. A new bar will appear at the top to confirm that. You can now play with the other menu sections or crank and keep cranking to record a movie (like an old mechanical camera!). When the memory limit is full or if stop cranking, the app will start processing the data and save a `.gif` file in your data folder (see [retreiving media](#retrieving-media)). 
+To record a video, use left or right to reach the `VIDEO MODE` section, then up or down to select `On`. A new bar will appear at the top to confirm that. You can now play with the other menu sections or crank and keep cranking to record a movie (like an old mechanical camera!). 
+
+![Recording an animation](images/rec.gif)
+
+When the memory limit is full or if stop cranking, the app will start processing the data and save a `.gif` file in your data folder (see [retreiving media](#retrieving-media)). 
 
 > Note: if you'd rather not have to use the crank to record videos, an alternative input method is available: press and hold Ⓐ. You can enable this via a checkbox in the Playdate system menu.
+
+![Processing the gif](images/convert.gif)
 
 The `VIDEO PALETTE` section (only available when `VIDEO MODE` is `On`) allows you to choose from different palette presets for the generated gif. It's still 2 color, but if you feel like trying something else than black & white, you can. This feature is only available in video mode and you obviously won't be able to admire the result on your Playdate directly.
 
@@ -84,12 +92,16 @@ The `VIDEO PALETTE` section (only available when `VIDEO MODE` is `On`) allows yo
 
 The menu in this screen displays small thumbnails of your media. 
 
+![Screenshot of Camera roll screen](images/roll.gif)
+
 Videos are represented with 2 columns of holes, as in an actual film strip (and the preview is a still of the first frame of the video).
 
 At any time:
 - pressing Ⓑ will return to the **home**.
 
 In the `DELETE` section, pressing Ⓐ will delete the currently displayed photo or video (permanently, cannot be undone).
+
+![Deleting a picture](images/delete.gif)
 
 ## Retrieving media
 
@@ -104,7 +116,6 @@ Then navigate to `Data/com.t0m.camera/` if you installed the app manually, or `D
 ## TODO
 
 - Add sound effects
-- Add a bunch of screenshots to this doc
 - Add an animated preview for movies in the camera roll (i.e. generate a `.pdv` in addition to the `.gif`)
 - Add stickers and cool stuff
 - Fix all the [issues](#known-issues) UwU
