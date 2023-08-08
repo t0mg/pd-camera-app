@@ -1,5 +1,4 @@
 build/*
-Source/main.lua
 Source/pdex.elf
 Source/pdex.dll
 Camera.pdx/*
